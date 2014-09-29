@@ -1,0 +1,664 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/umakant/local/bin/node',
+1 verbose cli   '/home/umakant/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'twitter-bootstrap-node' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'twitter-bootstrap-node', null ]
+6 verbose cache add name=undefined spec="twitter-bootstrap-node" args=["twitter-bootstrap-node",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'twitter-bootstrap-node',
+7 verbose parsed url   path: 'twitter-bootstrap-node',
+7 verbose parsed url   href: 'twitter-bootstrap-node' }
+8 silly lockFile 48703a83-twitter-bootstrap-node twitter-bootstrap-node
+9 verbose lock twitter-bootstrap-node /home/umakant/.npm/48703a83-twitter-bootstrap-node.lock
+10 silly lockFile 48703a83-twitter-bootstrap-node twitter-bootstrap-node
+11 silly lockFile 48703a83-twitter-bootstrap-node twitter-bootstrap-node
+12 verbose addNamed [ 'twitter-bootstrap-node', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 3723eb5d-twitter-bootstrap-node twitter-bootstrap-node@
+15 verbose lock twitter-bootstrap-node@ /home/umakant/.npm/3723eb5d-twitter-bootstrap-node.lock
+16 silly addNameRange { name: 'twitter-bootstrap-node', range: '*', hasData: false }
+17 verbose url raw twitter-bootstrap-node
+18 verbose url resolving [ 'http://registry.npmjs.org/', './twitter-bootstrap-node' ]
+19 verbose url resolved http://registry.npmjs.org/twitter-bootstrap-node
+20 info trying registry request attempt 1 at 16:24:25
+21 http GET http://registry.npmjs.org/twitter-bootstrap-node
+22 http 200 http://registry.npmjs.org/twitter-bootstrap-node
+23 silly registry.get cb [ 200,
+23 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly registry.get     etag: '"9ODGRN5HWH4FQ831YJSBW8PM1"',
+23 silly registry.get     'content-type': 'application/json',
+23 silly registry.get     'cache-control': 'max-age=60',
+23 silly registry.get     'content-length': '5515',
+23 silly registry.get     'accept-ranges': 'bytes',
+23 silly registry.get     date: 'Mon, 29 Sep 2014 10:54:27 GMT',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     age: '0',
+23 silly registry.get     connection: 'keep-alive',
+23 silly registry.get     'x-served-by': 'cache-syd1620-SYD',
+23 silly registry.get     'x-cache': 'MISS',
+23 silly registry.get     'x-cache-hits': '0',
+23 silly registry.get     'x-timer': 'S1411988066.347603,VS0,VE982',
+23 silly registry.get     vary: 'Accept' } ]
+24 silly addNameRange number 2 { name: 'twitter-bootstrap-node', range: '*', hasData: true }
+25 silly addNameRange versions [ 'twitter-bootstrap-node',
+25 silly addNameRange   [ '0.1.2', '0.1.0-beta', '0.1.1-beta' ] ]
+26 verbose addNamed [ 'twitter-bootstrap-node', '0.1.2' ]
+27 verbose addNamed [ '0.1.2', '0.1.2' ]
+28 silly lockFile c69ff775-twitter-bootstrap-node-0-1-2 twitter-bootstrap-node@0.1.2
+29 verbose lock twitter-bootstrap-node@0.1.2 /home/umakant/.npm/c69ff775-twitter-bootstrap-node-0-1-2.lock
+30 silly lockFile b4f6b5f8-twitter-bootstrap-node-0-1-2-tgz http://registry.npmjs.org/twitter-bootstrap-node/-/twitter-bootstrap-node-0.1.2.tgz
+31 verbose lock http://registry.npmjs.org/twitter-bootstrap-node/-/twitter-bootstrap-node-0.1.2.tgz /home/umakant/.npm/b4f6b5f8-twitter-bootstrap-node-0-1-2-tgz.lock
+32 verbose addRemoteTarball [ 'http://registry.npmjs.org/twitter-bootstrap-node/-/twitter-bootstrap-node-0.1.2.tgz',
+32 verbose addRemoteTarball   '0d46394a7176a47e88ad0451becde6cbcefef53b' ]
+33 info retry fetch attempt 1 at 16:24:29
+34 verbose fetch to= /home/umakant/tmp/npm-18517-AbSEqDts/registry.npmjs.org/twitter-bootstrap-node/-/twitter-bootstrap-node-0.1.2.tgz
+35 http GET http://registry.npmjs.org/twitter-bootstrap-node/-/twitter-bootstrap-node-0.1.2.tgz
+36 http 200 http://registry.npmjs.org/twitter-bootstrap-node/-/twitter-bootstrap-node-0.1.2.tgz
+37 silly lockFile b4f6b5f8-twitter-bootstrap-node-0-1-2-tgz http://registry.npmjs.org/twitter-bootstrap-node/-/twitter-bootstrap-node-0.1.2.tgz
+38 silly lockFile b4f6b5f8-twitter-bootstrap-node-0-1-2-tgz http://registry.npmjs.org/twitter-bootstrap-node/-/twitter-bootstrap-node-0.1.2.tgz
+39 silly lockFile c69ff775-twitter-bootstrap-node-0-1-2 twitter-bootstrap-node@0.1.2
+40 silly lockFile c69ff775-twitter-bootstrap-node-0-1-2 twitter-bootstrap-node@0.1.2
+41 silly lockFile 3723eb5d-twitter-bootstrap-node twitter-bootstrap-node@
+42 silly lockFile 3723eb5d-twitter-bootstrap-node twitter-bootstrap-node@
+43 silly resolved [ { name: 'twitter-bootstrap-node',
+43 silly resolved     description: 'Twitter Bootstrap for Node.js',
+43 silly resolved     author: { name: 'shinya.takimoto', email: 'shinya.takimoto@gmail.com' },
+43 silly resolved     version: '0.1.2',
+43 silly resolved     bin: { 'twitter-bootstrap': './bin/twitter-bootstrap' },
+43 silly resolved     dependencies: { mkdirp: '0.3.0', 'fs.extra': '' },
+43 silly resolved     keywords: [ 'express', 'genelator', 'twitter', 'bootstrap' ],
+43 silly resolved     repository:
+43 silly resolved      { type: 'git',
+43 silly resolved        url: 'git://github.com/takimo/twitter-bootstrap-node.git' },
+43 silly resolved     engines: { node: '*' },
+43 silly resolved     _npmUser: { name: 'takimo', email: 'subtakimo@gmail.com' },
+43 silly resolved     _id: 'twitter-bootstrap-node@0.1.2',
+43 silly resolved     devDependencies: {},
+43 silly resolved     optionalDependencies: {},
+43 silly resolved     _engineSupported: true,
+43 silly resolved     _npmVersion: '1.1.21',
+43 silly resolved     _nodeVersion: 'v0.6.0',
+43 silly resolved     _defaultsLoaded: true,
+43 silly resolved     dist:
+43 silly resolved      { shasum: '0d46394a7176a47e88ad0451becde6cbcefef53b',
+43 silly resolved        tarball: 'http://registry.npmjs.org/twitter-bootstrap-node/-/twitter-bootstrap-node-0.1.2.tgz' },
+43 silly resolved     maintainers: [ [Object] ],
+43 silly resolved     directories: {},
+43 silly resolved     _shasum: '0d46394a7176a47e88ad0451becde6cbcefef53b',
+43 silly resolved     _from: 'twitter-bootstrap-node@',
+43 silly resolved     _resolved: 'http://registry.npmjs.org/twitter-bootstrap-node/-/twitter-bootstrap-node-0.1.2.tgz' } ]
+44 info install twitter-bootstrap-node@0.1.2 into /home/umakant/node/node_demo
+45 info installOne twitter-bootstrap-node@0.1.2
+46 info /home/umakant/node/node_demo/node_modules/twitter-bootstrap-node unbuild
+47 verbose tar unpack /home/umakant/.npm/twitter-bootstrap-node/0.1.2/package.tgz
+48 silly lockFile c778d57d-e-modules-twitter-bootstrap-node tar:///home/umakant/node/node_demo/node_modules/twitter-bootstrap-node
+49 verbose lock tar:///home/umakant/node/node_demo/node_modules/twitter-bootstrap-node /home/umakant/.npm/c778d57d-e-modules-twitter-bootstrap-node.lock
+50 silly lockFile cf631e68-bootstrap-node-0-1-2-package-tgz tar:///home/umakant/.npm/twitter-bootstrap-node/0.1.2/package.tgz
+51 verbose lock tar:///home/umakant/.npm/twitter-bootstrap-node/0.1.2/package.tgz /home/umakant/.npm/cf631e68-bootstrap-node-0-1-2-package-tgz.lock
+52 silly gunzTarPerm modes [ '755', '644' ]
+53 silly gunzTarPerm extractEntry package.json
+54 silly gunzTarPerm extractEntry .npmignore
+55 silly gunzTarPerm extractEntry README.md
+56 silly gunzTarPerm extractEntry bin/twitter-bootstrap
+57 silly gunzTarPerm extractEntry hoge/package.json
+58 silly gunzTarPerm extractEntry hoge/app.js
+59 silly gunzTarPerm extractEntry hoge/public/images/bootstrap/glyphicons-halflings-white.png
+60 silly gunzTarPerm extractEntry hoge/public/images/bootstrap/glyphicons-halflings.png
+61 silly gunzTarPerm extractEntry hoge/public/stylesheets/style.css
+62 silly gunzTarPerm extractEntry hoge/public/stylesheets/style.less
+63 silly gunzTarPerm extractEntry hoge/routes/index.js
+64 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/pager.less
+65 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/accordion.less
+66 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/bootstrap.less
+67 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/breadcrumbs.less
+68 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/button-groups.less
+69 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/buttons.less
+70 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/carousel.less
+71 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/close.less
+72 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/code.less
+73 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/component-animations.less
+74 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/dropdowns.less
+75 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/forms.less
+76 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/grid.less
+77 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/hero-unit.less
+78 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/labels-badges.less
+79 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/layouts.less
+80 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/mixins.less
+81 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/modals.less
+82 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/navbar.less
+83 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/navs.less
+84 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/alerts.less
+85 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/pagination.less
+86 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/popovers.less
+87 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/progress-bars.less
+88 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/reset.less
+89 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/responsive-1200px-min.less
+90 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/responsive-767px-max.less
+91 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/responsive-768px-979px.less
+92 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/responsive-navbar.less
+93 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/responsive-utilities.less
+94 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/responsive.less
+95 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/scaffolding.less
+96 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/sprites.less
+97 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/tables.less
+98 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/tests/css-tests.css
+99 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/tests/css-tests.html
+100 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/tests/forms.html
+101 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/tests/navbar.html
+102 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/thumbnails.less
+103 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/tooltip.less
+104 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/type.less
+105 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/utilities.less
+106 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/variables.less
+107 silly gunzTarPerm extractEntry hoge/vendor/twitter/bootstrap/less/wells.less
+108 silly gunzTarPerm extractEntry hoge/views/index.jade
+109 silly gunzTarPerm extractEntry hoge/views/layout.jade
+110 silly gunzTarPerm extractEntry vendor/bootstrap/img/glyphicons-halflings-white.png
+111 silly gunzTarPerm extractEntry vendor/bootstrap/img/glyphicons-halflings.png
+112 silly gunzTarPerm extractEntry vendor/bootstrap/js/README.md
+113 silly gunzTarPerm extractEntry vendor/bootstrap/js/bootstrap-collapse.js
+114 silly gunzTarPerm extractEntry vendor/bootstrap/js/bootstrap-dropdown.js
+115 silly gunzTarPerm extractEntry vendor/bootstrap/js/bootstrap-modal.js
+116 silly gunzTarPerm extractEntry vendor/bootstrap/js/bootstrap-popover.js
+117 silly gunzTarPerm extractEntry vendor/bootstrap/js/bootstrap-carousel.js
+118 silly gunzTarPerm extractEntry vendor/bootstrap/js/bootstrap-tab.js
+119 silly gunzTarPerm extractEntry vendor/bootstrap/js/bootstrap-tooltip.js
+120 silly gunzTarPerm extractEntry vendor/bootstrap/js/bootstrap-transition.js
+121 silly gunzTarPerm extractEntry vendor/bootstrap/js/bootstrap-typeahead.js
+122 silly gunzTarPerm extractEntry vendor/bootstrap/js/bootstrap-alert.js
+123 silly gunzTarPerm extractEntry vendor/bootstrap/js/bootstrap-button.js
+124 silly gunzTarPerm extractEntry vendor/bootstrap/js/bootstrap-scrollspy.js
+125 silly gunzTarPerm extractEntry vendor/bootstrap/js/tests/phantom.js
+126 silly gunzTarPerm extractEntry vendor/bootstrap/js/tests/server.js
+127 silly gunzTarPerm extractEntry vendor/bootstrap/js/tests/index.html
+128 silly gunzTarPerm extractEntry vendor/bootstrap/js/tests/unit/bootstrap-alert.js
+129 silly gunzTarPerm extractEntry vendor/bootstrap/js/tests/unit/bootstrap-collapse.js
+130 silly gunzTarPerm extractEntry vendor/bootstrap/js/tests/unit/bootstrap-dropdown.js
+131 silly gunzTarPerm extractEntry vendor/bootstrap/js/tests/unit/bootstrap-modal.js
+132 silly gunzTarPerm extractEntry vendor/bootstrap/js/tests/unit/bootstrap-carousel.js
+133 silly gunzTarPerm extractEntry vendor/bootstrap/js/tests/unit/bootstrap-popover.js
+134 silly gunzTarPerm extractEntry vendor/bootstrap/js/tests/unit/bootstrap-scrollspy.js
+135 silly gunzTarPerm extractEntry vendor/bootstrap/js/tests/unit/bootstrap-tab.js
+136 silly gunzTarPerm extractEntry vendor/bootstrap/js/tests/unit/bootstrap-tooltip.js
+137 silly gunzTarPerm extractEntry vendor/bootstrap/js/tests/unit/bootstrap-transition.js
+138 silly gunzTarPerm extractEntry vendor/bootstrap/js/tests/unit/bootstrap-button.js
+139 silly gunzTarPerm extractEntry vendor/bootstrap/js/tests/unit/bootstrap-typeahead.js
+140 silly gunzTarPerm extractEntry vendor/bootstrap/js/tests/unit/bootstrap-phantom.js
+141 silly gunzTarPerm extractEntry vendor/bootstrap/js/tests/vendor/jquery.js
+142 silly gunzTarPerm extractEntry vendor/bootstrap/js/tests/vendor/qunit.js
+143 silly gunzTarPerm extractEntry vendor/bootstrap/js/tests/vendor/qunit.css
+144 silly gunzTarPerm extractEntry vendor/bootstrap/less/pager.less
+145 silly gunzTarPerm extractEntry vendor/bootstrap/less/accordion.less
+146 silly gunzTarPerm extractEntry vendor/bootstrap/less/bootstrap.less
+147 silly gunzTarPerm extractEntry vendor/bootstrap/less/breadcrumbs.less
+148 silly gunzTarPerm extractEntry vendor/bootstrap/less/button-groups.less
+149 silly gunzTarPerm extractEntry vendor/bootstrap/less/buttons.less
+150 silly gunzTarPerm extractEntry vendor/bootstrap/less/carousel.less
+151 silly gunzTarPerm extractEntry vendor/bootstrap/less/close.less
+152 silly gunzTarPerm extractEntry vendor/bootstrap/less/code.less
+153 silly gunzTarPerm extractEntry vendor/bootstrap/less/component-animations.less
+154 silly gunzTarPerm extractEntry vendor/bootstrap/less/dropdowns.less
+155 silly gunzTarPerm extractEntry vendor/bootstrap/less/forms.less
+156 silly gunzTarPerm extractEntry vendor/bootstrap/less/grid.less
+157 silly gunzTarPerm extractEntry vendor/bootstrap/less/hero-unit.less
+158 silly gunzTarPerm extractEntry vendor/bootstrap/less/labels-badges.less
+159 silly gunzTarPerm extractEntry vendor/bootstrap/less/layouts.less
+160 silly gunzTarPerm extractEntry vendor/bootstrap/less/mixins.less
+161 silly gunzTarPerm extractEntry vendor/bootstrap/less/modals.less
+162 silly gunzTarPerm extractEntry vendor/bootstrap/less/navbar.less
+163 silly gunzTarPerm extractEntry vendor/bootstrap/less/navs.less
+164 silly gunzTarPerm extractEntry vendor/bootstrap/less/alerts.less
+165 silly gunzTarPerm extractEntry vendor/bootstrap/less/pagination.less
+166 silly gunzTarPerm extractEntry vendor/bootstrap/less/popovers.less
+167 silly gunzTarPerm extractEntry vendor/bootstrap/less/progress-bars.less
+168 silly gunzTarPerm extractEntry vendor/bootstrap/less/reset.less
+169 silly gunzTarPerm extractEntry vendor/bootstrap/less/responsive-1200px-min.less
+170 silly gunzTarPerm extractEntry vendor/bootstrap/less/responsive-767px-max.less
+171 silly gunzTarPerm extractEntry vendor/bootstrap/less/responsive-768px-979px.less
+172 silly gunzTarPerm extractEntry vendor/bootstrap/less/responsive-navbar.less
+173 silly gunzTarPerm extractEntry vendor/bootstrap/less/responsive-utilities.less
+174 silly gunzTarPerm extractEntry vendor/bootstrap/less/responsive.less
+175 silly gunzTarPerm extractEntry vendor/bootstrap/less/scaffolding.less
+176 silly gunzTarPerm extractEntry vendor/bootstrap/less/sprites.less
+177 silly gunzTarPerm extractEntry vendor/bootstrap/less/tables.less
+178 silly gunzTarPerm extractEntry vendor/bootstrap/less/tests/css-tests.css
+179 silly gunzTarPerm extractEntry vendor/bootstrap/less/tests/css-tests.html
+180 silly gunzTarPerm extractEntry vendor/bootstrap/less/tests/forms.html
+181 silly gunzTarPerm extractEntry vendor/bootstrap/less/tests/navbar.html
+182 silly gunzTarPerm extractEntry vendor/bootstrap/less/thumbnails.less
+183 silly gunzTarPerm extractEntry vendor/bootstrap/less/tooltip.less
+184 silly gunzTarPerm extractEntry vendor/bootstrap/less/type.less
+185 silly gunzTarPerm extractEntry vendor/bootstrap/less/utilities.less
+186 silly gunzTarPerm extractEntry vendor/bootstrap/less/variables.less
+187 silly gunzTarPerm extractEntry vendor/bootstrap/less/wells.less
+188 silly lockFile c778d57d-e-modules-twitter-bootstrap-node tar:///home/umakant/node/node_demo/node_modules/twitter-bootstrap-node
+189 silly lockFile c778d57d-e-modules-twitter-bootstrap-node tar:///home/umakant/node/node_demo/node_modules/twitter-bootstrap-node
+190 silly lockFile cf631e68-bootstrap-node-0-1-2-package-tgz tar:///home/umakant/.npm/twitter-bootstrap-node/0.1.2/package.tgz
+191 silly lockFile cf631e68-bootstrap-node-0-1-2-package-tgz tar:///home/umakant/.npm/twitter-bootstrap-node/0.1.2/package.tgz
+192 info preinstall twitter-bootstrap-node@0.1.2
+193 verbose readDependencies using package.json deps
+194 verbose readDependencies using package.json deps
+195 verbose cache add [ 'mkdirp@0.3.0', null ]
+196 verbose cache add name=undefined spec="mkdirp@0.3.0" args=["mkdirp@0.3.0",null]
+197 verbose parsed url { protocol: null,
+197 verbose parsed url   slashes: null,
+197 verbose parsed url   auth: null,
+197 verbose parsed url   host: null,
+197 verbose parsed url   port: null,
+197 verbose parsed url   hostname: null,
+197 verbose parsed url   hash: null,
+197 verbose parsed url   search: null,
+197 verbose parsed url   query: null,
+197 verbose parsed url   pathname: 'mkdirp@0.3.0',
+197 verbose parsed url   path: 'mkdirp@0.3.0',
+197 verbose parsed url   href: 'mkdirp@0.3.0' }
+198 verbose cache add [ 'fs.extra@', null ]
+199 verbose cache add name=undefined spec="fs.extra@" args=["fs.extra@",null]
+200 verbose parsed url { protocol: null,
+200 verbose parsed url   slashes: null,
+200 verbose parsed url   auth: null,
+200 verbose parsed url   host: null,
+200 verbose parsed url   port: null,
+200 verbose parsed url   hostname: null,
+200 verbose parsed url   hash: null,
+200 verbose parsed url   search: null,
+200 verbose parsed url   query: null,
+200 verbose parsed url   pathname: 'fs.extra@',
+200 verbose parsed url   path: 'fs.extra@',
+200 verbose parsed url   href: 'fs.extra@' }
+201 verbose cache add name="mkdirp" spec="0.3.0" args=["mkdirp","0.3.0"]
+202 verbose parsed url { protocol: null,
+202 verbose parsed url   slashes: null,
+202 verbose parsed url   auth: null,
+202 verbose parsed url   host: null,
+202 verbose parsed url   port: null,
+202 verbose parsed url   hostname: null,
+202 verbose parsed url   hash: null,
+202 verbose parsed url   search: null,
+202 verbose parsed url   query: null,
+202 verbose parsed url   pathname: '0.3.0',
+202 verbose parsed url   path: '0.3.0',
+202 verbose parsed url   href: '0.3.0' }
+203 verbose addNamed [ 'mkdirp', '0.3.0' ]
+204 verbose addNamed [ '0.3.0', '0.3.0' ]
+205 silly lockFile 9a6651f3-mkdirp-0-3-0 mkdirp@0.3.0
+206 verbose lock mkdirp@0.3.0 /home/umakant/.npm/9a6651f3-mkdirp-0-3-0.lock
+207 verbose cache add name="fs.extra" spec="" args=["fs.extra",""]
+208 verbose parsed url { protocol: null,
+208 verbose parsed url   slashes: null,
+208 verbose parsed url   auth: null,
+208 verbose parsed url   host: null,
+208 verbose parsed url   port: null,
+208 verbose parsed url   hostname: null,
+208 verbose parsed url   hash: null,
+208 verbose parsed url   search: null,
+208 verbose parsed url   query: null,
+208 verbose parsed url   pathname: null,
+208 verbose parsed url   path: null,
+208 verbose parsed url   href: '' }
+209 verbose addNamed [ 'fs.extra', '' ]
+210 verbose addNamed [ null, '*' ]
+211 silly lockFile f99890a9-fs-extra fs.extra@
+212 verbose lock fs.extra@ /home/umakant/.npm/f99890a9-fs-extra.lock
+213 silly addNameRange { name: 'fs.extra', range: '*', hasData: false }
+214 verbose url raw fs.extra
+215 verbose url resolving [ 'http://registry.npmjs.org/', './fs.extra' ]
+216 verbose url resolved http://registry.npmjs.org/fs.extra
+217 info trying registry request attempt 1 at 16:24:39
+218 http GET http://registry.npmjs.org/fs.extra
+219 verbose url raw mkdirp
+220 verbose url resolving [ 'http://registry.npmjs.org/', './mkdirp' ]
+221 verbose url resolved http://registry.npmjs.org/mkdirp
+222 info trying registry request attempt 1 at 16:24:39
+223 verbose etag "C5K6Z3N1TR1E91DOOPOUICJ8B"
+224 http GET http://registry.npmjs.org/mkdirp
+225 http 304 http://registry.npmjs.org/mkdirp
+226 silly registry.get cb [ 304,
+226 silly registry.get   { date: 'Mon, 29 Sep 2014 10:54:40 GMT',
+226 silly registry.get     via: '1.1 varnish',
+226 silly registry.get     'last-modified': 'Mon, 29 Sep 2014 10:44:58 GMT',
+226 silly registry.get     'cache-control': 'max-age=60',
+226 silly registry.get     etag: '"C5K6Z3N1TR1E91DOOPOUICJ8B"',
+226 silly registry.get     connection: 'keep-alive',
+226 silly registry.get     'x-served-by': 'cache-syd1621-SYD',
+226 silly registry.get     'x-cache': 'HIT',
+226 silly registry.get     'x-cache-hits': '43',
+226 silly registry.get     'x-timer': 'S1411988080.128552,VS0,VE0',
+226 silly registry.get     vary: 'Accept' } ]
+227 verbose etag mkdirp from cache
+228 silly lockFile 9a6651f3-mkdirp-0-3-0 mkdirp@0.3.0
+229 silly lockFile 9a6651f3-mkdirp-0-3-0 mkdirp@0.3.0
+230 http 200 http://registry.npmjs.org/fs.extra
+231 silly registry.get cb [ 200,
+231 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+231 silly registry.get     etag: '"98MV11UX05JU1WUJCNCU5GGCI"',
+231 silly registry.get     'content-type': 'application/json',
+231 silly registry.get     'cache-control': 'max-age=60',
+231 silly registry.get     'content-length': '29469',
+231 silly registry.get     'accept-ranges': 'bytes',
+231 silly registry.get     date: 'Mon, 29 Sep 2014 10:54:41 GMT',
+231 silly registry.get     via: '1.1 varnish',
+231 silly registry.get     age: '3509',
+231 silly registry.get     connection: 'keep-alive',
+231 silly registry.get     'x-served-by': 'cache-syd1620-SYD',
+231 silly registry.get     'x-cache': 'MISS',
+231 silly registry.get     'x-cache-hits': '0',
+231 silly registry.get     'x-timer': 'S1411988080.098635,VS0,VE976',
+231 silly registry.get     vary: 'Accept' } ]
+232 silly addNameRange number 2 { name: 'fs.extra', range: '*', hasData: true }
+233 silly addNameRange versions [ 'fs.extra',
+233 silly addNameRange   [ '1.0.0',
+233 silly addNameRange     '1.0.1',
+233 silly addNameRange     '1.1.1',
+233 silly addNameRange     '1.1.2',
+233 silly addNameRange     '1.1.3',
+233 silly addNameRange     '1.1.5',
+233 silly addNameRange     '1.2.0',
+233 silly addNameRange     '1.2.1' ] ]
+234 verbose addNamed [ 'fs.extra', '1.2.1' ]
+235 verbose addNamed [ '1.2.1', '1.2.1' ]
+236 silly lockFile 49d32ef5-fs-extra-1-2-1 fs.extra@1.2.1
+237 verbose lock fs.extra@1.2.1 /home/umakant/.npm/49d32ef5-fs-extra-1-2-1.lock
+238 silly lockFile 3d5e57ba--org-fs-extra-fs-extra-1-2-1-tgz http://registry.npmjs.org/fs.extra/-/fs.extra-1.2.1.tgz
+239 verbose lock http://registry.npmjs.org/fs.extra/-/fs.extra-1.2.1.tgz /home/umakant/.npm/3d5e57ba--org-fs-extra-fs-extra-1-2-1-tgz.lock
+240 verbose addRemoteTarball [ 'http://registry.npmjs.org/fs.extra/-/fs.extra-1.2.1.tgz',
+240 verbose addRemoteTarball   '060bf20264f35e39ad247e5e9d2121a2a75a1733' ]
+241 info retry fetch attempt 1 at 16:24:42
+242 verbose fetch to= /home/umakant/tmp/npm-18517-AbSEqDts/registry.npmjs.org/fs.extra/-/fs.extra-1.2.1.tgz
+243 http GET http://registry.npmjs.org/fs.extra/-/fs.extra-1.2.1.tgz
+244 http 200 http://registry.npmjs.org/fs.extra/-/fs.extra-1.2.1.tgz
+245 silly lockFile 3d5e57ba--org-fs-extra-fs-extra-1-2-1-tgz http://registry.npmjs.org/fs.extra/-/fs.extra-1.2.1.tgz
+246 silly lockFile 3d5e57ba--org-fs-extra-fs-extra-1-2-1-tgz http://registry.npmjs.org/fs.extra/-/fs.extra-1.2.1.tgz
+247 silly lockFile 49d32ef5-fs-extra-1-2-1 fs.extra@1.2.1
+248 silly lockFile 49d32ef5-fs-extra-1-2-1 fs.extra@1.2.1
+249 silly lockFile f99890a9-fs-extra fs.extra@
+250 silly lockFile f99890a9-fs-extra fs.extra@
+251 silly resolved [ { name: 'mkdirp',
+251 silly resolved     description: 'Recursively mkdir, like `mkdir -p`',
+251 silly resolved     version: '0.3.0',
+251 silly resolved     author:
+251 silly resolved      { name: 'James Halliday',
+251 silly resolved        email: 'mail@substack.net',
+251 silly resolved        url: 'http://substack.net' },
+251 silly resolved     main: './index',
+251 silly resolved     keywords: [ 'mkdir', 'directory' ],
+251 silly resolved     repository:
+251 silly resolved      { type: 'git',
+251 silly resolved        url: 'git://github.com/substack/node-mkdirp.git' },
+251 silly resolved     scripts: { test: 'tap test/*.js' },
+251 silly resolved     devDependencies: { tap: '0.0.x' },
+251 silly resolved     license: 'MIT/X11',
+251 silly resolved     engines: { node: '*' },
+251 silly resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+251 silly resolved     _id: 'mkdirp@0.3.0',
+251 silly resolved     dependencies: {},
+251 silly resolved     _engineSupported: true,
+251 silly resolved     _npmVersion: '1.0.106',
+251 silly resolved     _nodeVersion: 'v0.4.12',
+251 silly resolved     _defaultsLoaded: true,
+251 silly resolved     dist:
+251 silly resolved      { shasum: '1bbf5ab1ba827af23575143490426455f481fe1e',
+251 silly resolved        tarball: 'http://registry.npmjs.org/mkdirp/-/mkdirp-0.3.0.tgz' },
+251 silly resolved     maintainers: [ [Object] ],
+251 silly resolved     directories: {},
+251 silly resolved     _shasum: '1bbf5ab1ba827af23575143490426455f481fe1e',
+251 silly resolved     _from: 'mkdirp@0.3.0',
+251 silly resolved     _resolved: 'http://registry.npmjs.org/mkdirp/-/mkdirp-0.3.0.tgz',
+251 silly resolved     bugs: { url: 'https://github.com/substack/node-mkdirp/issues' },
+251 silly resolved     readme: 'ERROR: No README data found!',
+251 silly resolved     homepage: 'https://github.com/substack/node-mkdirp' },
+251 silly resolved   { author:
+251 silly resolved      { name: 'AJ ONeal',
+251 silly resolved        email: 'coolaj86@gmail.com',
+251 silly resolved        url: 'http://coolaj86.info/' },
+251 silly resolved     name: 'fs.extra',
+251 silly resolved     description: 'fs.move and fs.copy for Node.JS',
+251 silly resolved     version: '1.2.1',
+251 silly resolved     repository:
+251 silly resolved      { type: 'git',
+251 silly resolved        url: 'git://github.com/coolaj86/node-examples-js.git' },
+251 silly resolved     main: 'fs.extra',
+251 silly resolved     scripts: { test: 'node test.js' },
+251 silly resolved     engines: { node: '*' },
+251 silly resolved     dependencies: { mkdirp: '~0.3.5', 'fs-extra': '~0.6.1', walk: '~2.2.1' },
+251 silly resolved     devDependencies: { sequence: '~2.2.1' },
+251 silly resolved     licenses: [ [Object], [Object] ],
+251 silly resolved     readme: 'fs.extra\n===\n\nAdds `copy`, `copyRecursive`, `mkdirp`, `move`, `walk`, and `rmrf` to Node.JS\' `fs`.\n\nInstall with `npm install -S fs.extra`\n\n    // this will have all of the normal fs methods\n    var fs = require(\'fs.extra\');\n\nfs.copy\n===\n\nCreates an `fs.readStream` and `fs.writeStream` and uses `util.pump` to efficiently copy.\n\n    fs.copy(\'foo.txt\', \'bar.txt\', function (err) {\n      if (err) {\n        throw err;\n      }\n\n      console.log("Copied \'foo.txt\' to \'bar.txt\');\n    });\n\nfs.copyRecursive\n===\n\nBasically a local `rsync`, uses `fs.copy` to recursively copy files and folders (with correct permissions).\n\n    fs.copyRecursive(\'./foo\', \'./bar\', function (err) {\n      if (err) {\n        throw err;\n      }\n\n      console.log("Copied \'./foo\' to \'./bar\');\n    });\n\nfs.mkdirRecursive\n===\n\nIncluded from <https://github.com/substack/node-mkdirp>\n\n    // fs.mkdirp(path, mode=(0777 & (~process.umask())), cb);\n\n    fs.mkdirp(\'/tmp/foo/bar/baz\', function (err) {\n      if (err) {\n        console.error(err);\n      } else {\n        console.log(\'pow!\')\n      }\n    });\n\nfs.mkdirRecursiveSync\n===\n\nIncluded from <https://github.com/substack/node-mkdirp>\n\n    // fs.mkdirpSync(path, mode=(0777 & (~process.umask())));\n\n    try {\n      fs.mkdirpSync(\'/tmp/foo/bar/baz\');\n    } catch(e) {\n      throw e;\n    }\n\nfs.move\n===\n\nAttempts `fs.rename`, then tries `fs.copy` + `fs.unlink` before failing.\n\n    fs.move(\'foo.txt\', \'bar.txt\', function (err) {\n      if (err) {\n        throw err;\n      }\n\n      console.log("Moved \'foo.txt\' to \'bar.txt\');\n    });\n\nfs.rmRecursive\n===\n\nIncluded from <https://github.com/jprichardson/node-fs-extra>\n\nRecursively deletes a directory (like `rm -rf`)\n\n    // fs.rmrf(dir, callback);\n\n    fs.rmrf(\'/choose/me/carefully/\', function (err) {\n      if (err) {\n        console.error(err);\n      }\n    });\n\nfs.rmRecursiveSync\n===\n\nIncluded from <https://github.com/jprichardson/node-fs-extra>\n\nRecursively deletes a directory (like `rm -rf`)\n\n    // fs.rmrfSync(dir);\n\n    fs.rmrfSync(\'/choose/me/carefully/\');\n\nfs.walk\n===\n\nSee <https://github.com/coolaj86/node-walk>\n\n    var walker = fs.walk(dir)\n      ;\n\n    // file, files, directory, directories\n    walker.on("file", function (root, stat, next) {\n      var filepath = path.join(root, stat.name)\n        ;\n\n      console.log(filepath);\n    });\n\nAliases and Backwards Compatibility\n===\n\nFor the sake of backwards compatability, you can call the recursive functions with their names as such\n\n    fs.remove <- fs.rmRecursive <- fs.rmrf\n    fs.removeSync <- fs.rmRecursiveSync <- fs.rmrfSync\n    fs.mkdirRecursive <- fs.mkdirp\n    fs.mkdirRecursiveSync <- fs.mkdirpSync\n\nLicense\n===\n\nCopyright AJ ONeal 2011-2012\n\nThis project is available under the MIT and Apache v2 licenses.\n\n  * http://www.opensource.org/licenses/mit-license.php\n  * http://www.apache.org/licenses/LICENSE-2.0.html\n',
+251 silly resolved     readmeFilename: 'README.md',
+251 silly resolved     bugs: { url: 'https://github.com/coolaj86/node-examples-js/issues' },
+251 silly resolved     _id: 'fs.extra@1.2.1',
+251 silly resolved     dist:
+251 silly resolved      { shasum: '060bf20264f35e39ad247e5e9d2121a2a75a1733',
+251 silly resolved        tarball: 'http://registry.npmjs.org/fs.extra/-/fs.extra-1.2.1.tgz' },
+251 silly resolved     _from: 'fs.extra@',
+251 silly resolved     _npmVersion: '1.2.21',
+251 silly resolved     _npmUser: { name: 'coolaj86', email: 'coolaj86@gmail.com' },
+251 silly resolved     maintainers: [ [Object] ],
+251 silly resolved     directories: {},
+251 silly resolved     _shasum: '060bf20264f35e39ad247e5e9d2121a2a75a1733',
+251 silly resolved     _resolved: 'http://registry.npmjs.org/fs.extra/-/fs.extra-1.2.1.tgz' } ]
+252 info install mkdirp@0.3.0 into /home/umakant/node/node_demo/node_modules/twitter-bootstrap-node
+253 info install fs.extra@1.2.1 into /home/umakant/node/node_demo/node_modules/twitter-bootstrap-node
+254 info installOne mkdirp@0.3.0
+255 info installOne fs.extra@1.2.1
+256 info /home/umakant/node/node_demo/node_modules/twitter-bootstrap-node/node_modules/mkdirp unbuild
+257 verbose tar unpack /home/umakant/.npm/mkdirp/0.3.0/package.tgz
+258 silly lockFile beddbead-otstrap-node-node-modules-mkdirp tar:///home/umakant/node/node_demo/node_modules/twitter-bootstrap-node/node_modules/mkdirp
+259 verbose lock tar:///home/umakant/node/node_demo/node_modules/twitter-bootstrap-node/node_modules/mkdirp /home/umakant/.npm/beddbead-otstrap-node-node-modules-mkdirp.lock
+260 silly lockFile 75e366bd-ant-npm-mkdirp-0-3-0-package-tgz tar:///home/umakant/.npm/mkdirp/0.3.0/package.tgz
+261 verbose lock tar:///home/umakant/.npm/mkdirp/0.3.0/package.tgz /home/umakant/.npm/75e366bd-ant-npm-mkdirp-0-3-0-package-tgz.lock
+262 info /home/umakant/node/node_demo/node_modules/twitter-bootstrap-node/node_modules/fs.extra unbuild
+263 silly gunzTarPerm modes [ '755', '644' ]
+264 verbose tar unpack /home/umakant/.npm/fs.extra/1.2.1/package.tgz
+265 silly lockFile 71f7b861-strap-node-node-modules-fs-extra tar:///home/umakant/node/node_demo/node_modules/twitter-bootstrap-node/node_modules/fs.extra
+266 verbose lock tar:///home/umakant/node/node_demo/node_modules/twitter-bootstrap-node/node_modules/fs.extra /home/umakant/.npm/71f7b861-strap-node-node-modules-fs-extra.lock
+267 silly lockFile dea9b35d-t-npm-fs-extra-1-2-1-package-tgz tar:///home/umakant/.npm/fs.extra/1.2.1/package.tgz
+268 verbose lock tar:///home/umakant/.npm/fs.extra/1.2.1/package.tgz /home/umakant/.npm/dea9b35d-t-npm-fs-extra-1-2-1-package-tgz.lock
+269 silly gunzTarPerm modes [ '755', '644' ]
+270 silly gunzTarPerm extractEntry package.json
+271 silly gunzTarPerm extractEntry README.md
+272 silly gunzTarPerm extractEntry fs.copy-recursive.js
+273 silly gunzTarPerm extractEntry fs.copy.js
+274 silly gunzTarPerm extractEntry fs.extra.js
+275 silly gunzTarPerm extractEntry fs.move.js
+276 silly gunzTarPerm extractEntry test.js
+277 silly gunzTarPerm extractEntry LICENSE.APACHE2
+278 silly gunzTarPerm extractEntry LICENSE.MIT
+279 silly lockFile 71f7b861-strap-node-node-modules-fs-extra tar:///home/umakant/node/node_demo/node_modules/twitter-bootstrap-node/node_modules/fs.extra
+280 silly lockFile 71f7b861-strap-node-node-modules-fs-extra tar:///home/umakant/node/node_demo/node_modules/twitter-bootstrap-node/node_modules/fs.extra
+281 silly lockFile dea9b35d-t-npm-fs-extra-1-2-1-package-tgz tar:///home/umakant/.npm/fs.extra/1.2.1/package.tgz
+282 silly lockFile dea9b35d-t-npm-fs-extra-1-2-1-package-tgz tar:///home/umakant/.npm/fs.extra/1.2.1/package.tgz
+283 info preinstall fs.extra@1.2.1
+284 verbose readDependencies using package.json deps
+285 verbose readDependencies using package.json deps
+286 verbose cache add [ 'mkdirp@~0.3.5', null ]
+287 verbose cache add name=undefined spec="mkdirp@~0.3.5" args=["mkdirp@~0.3.5",null]
+288 verbose parsed url { protocol: null,
+288 verbose parsed url   slashes: null,
+288 verbose parsed url   auth: null,
+288 verbose parsed url   host: null,
+288 verbose parsed url   port: null,
+288 verbose parsed url   hostname: null,
+288 verbose parsed url   hash: null,
+288 verbose parsed url   search: null,
+288 verbose parsed url   query: null,
+288 verbose parsed url   pathname: 'mkdirp@~0.3.5',
+288 verbose parsed url   path: 'mkdirp@~0.3.5',
+288 verbose parsed url   href: 'mkdirp@~0.3.5' }
+289 verbose cache add [ 'fs-extra@~0.6.1', null ]
+290 verbose cache add name=undefined spec="fs-extra@~0.6.1" args=["fs-extra@~0.6.1",null]
+291 verbose parsed url { protocol: null,
+291 verbose parsed url   slashes: null,
+291 verbose parsed url   auth: null,
+291 verbose parsed url   host: null,
+291 verbose parsed url   port: null,
+291 verbose parsed url   hostname: null,
+291 verbose parsed url   hash: null,
+291 verbose parsed url   search: null,
+291 verbose parsed url   query: null,
+291 verbose parsed url   pathname: 'fs-extra@~0.6.1',
+291 verbose parsed url   path: 'fs-extra@~0.6.1',
+291 verbose parsed url   href: 'fs-extra@~0.6.1' }
+292 verbose cache add name="mkdirp" spec="~0.3.5" args=["mkdirp","~0.3.5"]
+293 verbose parsed url { protocol: null,
+293 verbose parsed url   slashes: null,
+293 verbose parsed url   auth: null,
+293 verbose parsed url   host: null,
+293 verbose parsed url   port: null,
+293 verbose parsed url   hostname: null,
+293 verbose parsed url   hash: null,
+293 verbose parsed url   search: null,
+293 verbose parsed url   query: null,
+293 verbose parsed url   pathname: '~0.3.5',
+293 verbose parsed url   path: '~0.3.5',
+293 verbose parsed url   href: '~0.3.5' }
+294 verbose addNamed [ 'mkdirp', '~0.3.5' ]
+295 verbose addNamed [ null, '>=0.3.5-0 <0.4.0-0' ]
+296 silly lockFile c3f0fe9b-mkdirp-0-3-5 mkdirp@~0.3.5
+297 verbose lock mkdirp@~0.3.5 /home/umakant/.npm/c3f0fe9b-mkdirp-0-3-5.lock
+298 verbose cache add name="fs-extra" spec="~0.6.1" args=["fs-extra","~0.6.1"]
+299 verbose parsed url { protocol: null,
+299 verbose parsed url   slashes: null,
+299 verbose parsed url   auth: null,
+299 verbose parsed url   host: null,
+299 verbose parsed url   port: null,
+299 verbose parsed url   hostname: null,
+299 verbose parsed url   hash: null,
+299 verbose parsed url   search: null,
+299 verbose parsed url   query: null,
+299 verbose parsed url   pathname: '~0.6.1',
+299 verbose parsed url   path: '~0.6.1',
+299 verbose parsed url   href: '~0.6.1' }
+300 verbose addNamed [ 'fs-extra', '~0.6.1' ]
+301 verbose addNamed [ null, '>=0.6.1-0 <0.7.0-0' ]
+302 silly lockFile 9584dc01-fs-extra-0-6-1 fs-extra@~0.6.1
+303 verbose lock fs-extra@~0.6.1 /home/umakant/.npm/9584dc01-fs-extra-0-6-1.lock
+304 verbose cache add [ 'walk@~2.2.1', null ]
+305 verbose cache add name=undefined spec="walk@~2.2.1" args=["walk@~2.2.1",null]
+306 verbose parsed url { protocol: null,
+306 verbose parsed url   slashes: null,
+306 verbose parsed url   auth: null,
+306 verbose parsed url   host: null,
+306 verbose parsed url   port: null,
+306 verbose parsed url   hostname: null,
+306 verbose parsed url   hash: null,
+306 verbose parsed url   search: null,
+306 verbose parsed url   query: null,
+306 verbose parsed url   pathname: 'walk@~2.2.1',
+306 verbose parsed url   path: 'walk@~2.2.1',
+306 verbose parsed url   href: 'walk@~2.2.1' }
+307 verbose cache add name="walk" spec="~2.2.1" args=["walk","~2.2.1"]
+308 verbose parsed url { protocol: null,
+308 verbose parsed url   slashes: null,
+308 verbose parsed url   auth: null,
+308 verbose parsed url   host: null,
+308 verbose parsed url   port: null,
+308 verbose parsed url   hostname: null,
+308 verbose parsed url   hash: null,
+308 verbose parsed url   search: null,
+308 verbose parsed url   query: null,
+308 verbose parsed url   pathname: '~2.2.1',
+308 verbose parsed url   path: '~2.2.1',
+308 verbose parsed url   href: '~2.2.1' }
+309 verbose addNamed [ 'walk', '~2.2.1' ]
+310 verbose addNamed [ null, '>=2.2.1-0 <2.3.0-0' ]
+311 silly lockFile ec6cc086-walk-2-2-1 walk@~2.2.1
+312 verbose lock walk@~2.2.1 /home/umakant/.npm/ec6cc086-walk-2-2-1.lock
+313 silly addNameRange { name: 'mkdirp', range: '>=0.3.5-0 <0.4.0-0', hasData: false }
+314 silly addNameRange { name: 'fs-extra', range: '>=0.6.1-0 <0.7.0-0', hasData: false }
+315 silly addNameRange { name: 'walk', range: '>=2.2.1-0 <2.3.0-0', hasData: false }
+316 verbose url raw walk
+317 verbose url resolving [ 'http://registry.npmjs.org/', './walk' ]
+318 verbose url resolved http://registry.npmjs.org/walk
+319 info trying registry request attempt 1 at 16:24:44
+320 http GET http://registry.npmjs.org/walk
+321 silly gunzTarPerm extractEntry index.js
+322 verbose registry.get mkdirp not expired, no request
+323 silly addNameRange number 2 { name: 'mkdirp', range: '>=0.3.5-0 <0.4.0-0', hasData: true }
+324 silly addNameRange versions [ 'mkdirp',
+324 silly addNameRange   [ '0.0.1',
+324 silly addNameRange     '0.0.2',
+324 silly addNameRange     '0.0.3',
+324 silly addNameRange     '0.0.4',
+324 silly addNameRange     '0.0.5',
+324 silly addNameRange     '0.0.6',
+324 silly addNameRange     '0.0.7',
+324 silly addNameRange     '0.1.0',
+324 silly addNameRange     '0.2.0',
+324 silly addNameRange     '0.2.1',
+324 silly addNameRange     '0.2.2',
+324 silly addNameRange     '0.3.0',
+324 silly addNameRange     '0.3.1',
+324 silly addNameRange     '0.3.2',
+324 silly addNameRange     '0.3.3',
+324 silly addNameRange     '0.3.4',
+324 silly addNameRange     '0.3.5',
+324 silly addNameRange     '0.4.0',
+324 silly addNameRange     '0.4.1',
+324 silly addNameRange     '0.4.2',
+324 silly addNameRange     '0.5.0' ] ]
+325 verbose addNamed [ 'mkdirp', '0.3.5' ]
+326 verbose addNamed [ '0.3.5', '0.3.5' ]
+327 silly lockFile 67d2df2a-mkdirp-0-3-5 mkdirp@0.3.5
+328 verbose lock mkdirp@0.3.5 /home/umakant/.npm/67d2df2a-mkdirp-0-3-5.lock
+329 silly gunzTarPerm extractEntry package.json
+330 silly gunzTarPerm extractEntry .gitignore.rej
+331 silly lockFile 67d2df2a-mkdirp-0-3-5 mkdirp@0.3.5
+332 silly lockFile 67d2df2a-mkdirp-0-3-5 mkdirp@0.3.5
+333 silly lockFile c3f0fe9b-mkdirp-0-3-5 mkdirp@~0.3.5
+334 silly lockFile c3f0fe9b-mkdirp-0-3-5 mkdirp@~0.3.5
+335 verbose about to build /home/umakant/node/node_demo/node_modules/twitter-bootstrap-node/node_modules/fs.extra
+336 info /home/umakant/node/node_demo/node_modules/twitter-bootstrap-node/node_modules/fs.extra unbuild
+337 info preuninstall fs.extra@1.2.1
+338 info uninstall fs.extra@1.2.1
+339 verbose false,/home/umakant/node/node_demo/node_modules,/home/umakant/node/node_demo/node_modules/twitter-bootstrap-node/node_modules unbuild fs.extra@1.2.1
+340 info postuninstall fs.extra@1.2.1
+341 silly gunzTarPerm extractEntry .gitignore.orig
+342 silly gunzTarPerm extractEntry README.markdown
+343 verbose about to build /home/umakant/node/node_demo/node_modules/twitter-bootstrap-node
+344 info /home/umakant/node/node_demo/node_modules/twitter-bootstrap-node unbuild
+345 info preuninstall twitter-bootstrap-node@0.1.2
+346 info uninstall twitter-bootstrap-node@0.1.2
+347 silly gunzTarPerm extractEntry LICENSE
+348 silly gunzTarPerm extractEntry .gitignore
+349 verbose true,/home/umakant/node/node_demo/node_modules,/home/umakant/node/node_demo/node_modules unbuild twitter-bootstrap-node@0.1.2
+350 verbose /home/umakant/node/node_demo/node_modules/.bin,[object Object] binRoot
+351 info postuninstall twitter-bootstrap-node@0.1.2
+352 silly gunzTarPerm extractEntry examples/pow.js.rej
+353 silly gunzTarPerm extractEntry examples/pow.js
+354 silly gunzTarPerm extractEntry examples/pow.js.orig
+355 silly gunzTarPerm extractEntry test/perm.js
+356 error error rolling back Error: ENOTEMPTY, rmdir '/home/umakant/node/node_demo/node_modules/twitter-bootstrap-node/node_modules/mkdirp'
+356 error error rolling back  twitter-bootstrap-node@0.1.2 { [Error: ENOTEMPTY, rmdir '/home/umakant/node/node_demo/node_modules/twitter-bootstrap-node/node_modules/mkdirp']
+356 error error rolling back   errno: 53,
+356 error error rolling back   code: 'ENOTEMPTY',
+356 error error rolling back   path: '/home/umakant/node/node_demo/node_modules/twitter-bootstrap-node/node_modules/mkdirp' }
+357 error Error: EACCES, open '/home/umakant/.npm/mkdirp/0.3.5/package/package.json'
+357 error  { [Error: EACCES, open '/home/umakant/.npm/mkdirp/0.3.5/package/package.json']
+357 error   errno: 3,
+357 error   code: 'EACCES',
+357 error   path: '/home/umakant/.npm/mkdirp/0.3.5/package/package.json',
+357 error   parent: 'fs.extra' }
+358 error Please try running this command again as root/Administrator.
+359 error System Linux 3.5.0-54-generic
+360 error command "/home/umakant/local/bin/node" "/home/umakant/local/bin/npm" "install" "twitter-bootstrap-node"
+361 error cwd /home/umakant/node/node_demo
+362 error node -v v0.10.29
+363 error npm -v 1.4.14
+364 error path /home/umakant/.npm/mkdirp/0.3.5/package/package.json
+365 error code EACCES
+366 error errno 3
+367 error stack Error: EACCES, open '/home/umakant/.npm/mkdirp/0.3.5/package/package.json'
+368 verbose exit [ 3, true ]
