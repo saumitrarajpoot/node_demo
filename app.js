@@ -14,6 +14,12 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+// start database section
+//var databaseUrl = "expressyours"; // "username:password@example.com/mydb"
+//var collections = ["users"]
+//var db = require("mongojs").connect(databaseUrl, collections);
+// end database section
+
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
