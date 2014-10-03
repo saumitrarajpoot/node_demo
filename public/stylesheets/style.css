@@ -5,3 +5,16 @@ body {
 a {
   color: #00b7ff;
 }
+
+.clear{
+  clear: both;
+  min-height: 5px;
+}
+
+.clearboth{
+  clear: both;
+}
+
+.bdr {
+  border: 1px solid lightgray;
+}
