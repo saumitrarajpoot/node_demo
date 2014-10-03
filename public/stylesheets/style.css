@@ -1,20 +1,17 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #E9E9E9;
 }
 a {
   color: #00b7ff;
 }
 
 .clear{
-  clear: both;
   min-height: 5px;
+  clear: both;
 }
 
 .clearboth{
   clear: both;
-}
-
-.bdr {
-  border: 1px solid lightgray;
 }

@@ -1,5 +1,92 @@
 extends ../../layout/layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .row
+    .col-lg-3
+    .col-lg-6
+      br
+      br
+      br
+      .row
+        .col-lg-1
+        .col-lg-10
+          .auth-block
+            .row
+              .col-lg-12
+                .auth-block-header
+                  center Sign up
+            .clear
+            .clear
+            .clear
+            form(action='#', method='post')
+              .row
+                .col-lg-3
+                .col-lg-6 Email
+                .col-lg-3
+              .clear
+              .row
+                .col-lg-3
+                .col-lg-6
+                  input(type='text', name='email', placeholder='email', class='form-control')
+                .col-lg-3
+              .clear
+              .clear
+              .row
+                .col-lg-3
+                .col-lg-6 Frist Name
+                .col-lg-3
+              .clear
+              .row
+                .col-lg-3
+                .col-lg-6
+                  input(type='text', name='first_name', placeholder='First Name', class='form-control')
+                .col-lg-3
+              .clear
+              .clear
+              .row
+                .col-lg-3
+                .col-lg-6 Last Name
+                .col-lg-3
+              .clear
+              .row
+                .col-lg-3
+                .col-lg-6
+                  input(type='text', name='last_name', placeholder='Last Name', class='form-control')
+                .col-lg-3
+              .clear
+              .clear
+              .row
+                .col-lg-3
+                .col-lg-6 Password
+                .col-lg-3
+              .clear
+              .row
+                .col-lg-3
+                .col-lg-6
+                  input(type='password', name='password', placeholder='password', autocomplete='off', class='form-control')
+                .col-lg-3
+              .clear
+              .clear
+              .row
+                .col-lg-3
+                .col-lg-6 Password Confirm
+                .col-lg-3
+              .clear
+              .row
+                .col-lg-3
+                .col-lg-6
+                  input(type='password', name='password_confirm', placeholder='password confirm', autocomplete='off', class='form-control')
+                .col-lg-3
+              .clear
+              .clear
+              .row
+                .col-lg-3
+                .col-lg-6
+                  input(type='submit', name='Sign up' value="Sign up", autocomplete='off', class='btn btn-primary form-control')
+                .col-lg-3
+            .clear
+            .clear
+            .clear
+        .col-lg-1
+    .col-lg-6
+
