@@ -4,7 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var mongoose = require('mongoose');
 
 var app = express();
 
@@ -13,9 +13,12 @@ var view_path = path.join(__dirname, 'views');
 app.set('views', view_path);
 app.set('view engine', 'jade');
 // start database section
-//var databaseUrl = "expressyours"; // "username:password@example.com/mydb"
-//var collections = ["users"]
-//var db = require("mongojs").connect(databaseUrl, collections);
+var db = mongoose.connection;
+db.on('error', console.error);
+db.once('open', function() {
+  console.log('connected to data');
+});
+mongoose.connect('mongodb://localhost/node_test');
 // end database section
 
 // uncomment after placing your favicon in /public
@@ -26,7 +29,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
-
 require('./config/routes')(app);
 
 // catch 404 and forward to error handler

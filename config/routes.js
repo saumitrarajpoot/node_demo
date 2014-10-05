@@ -11,4 +11,5 @@ module.exports = function (app) {
   app.get('/', homes.index);
   app.get('/users/signin', sessions.signin);
   app.get('/users/signup', registrations.signup);
+  app.post('/users/signup', registrations.createAccount);
 }
