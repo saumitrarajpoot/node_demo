@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var expressValidator = require('express-validator');
 
 var app = express();
 
@@ -12,6 +13,7 @@ var app = express();
 var view_path = path.join(__dirname, 'views');
 app.set('views', view_path);
 app.set('view engine', 'jade');
+
 // start database section
 var db = mongoose.connection;
 db.on('error', console.error);
@@ -29,6 +31,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(expressValidator([]));
 require('./config/routes')(app);
 
 // catch 404 and forward to error handler

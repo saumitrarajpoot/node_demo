@@ -42,13 +42,14 @@ function hash (msg, key) {
 };
 
 UserSchema.methods = {
-  createUser : function(params){
+  createUser : function(params, fn){
     this.name = params['name'];
     this.email = params['email'];
     this.username = params['username'] ;
     this.password = params['password'];
-    console.log(this);
-    this.save();
+    this.save(function (err) {
+        fn(err, this);
+    });
   }
 };
 
