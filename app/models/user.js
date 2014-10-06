@@ -6,6 +6,7 @@
 var mongoose = require('mongoose');
 var crypto = require('crypto');
 var uuid = require('node-uuid');
+var expressValidator = require('express-validator');
 var Schema = mongoose.Schema;
 var oAuthTypes = [
   'github',
@@ -39,21 +40,45 @@ var UserSchema = new Schema({
   }
 });
 
+var isValidate = function(req){
+  req.assert('username', 'Userame is required').notEmpty();
+  req.assert('email', 'Email is required').notEmpty();
+  req.assert('email', 'A valid email is required').isEmail();
+  req.assert('password', 'Password is required').notEmpty();
+  req.assert('password', '8 to 20 characters required').len(8, 20);
+  var errors = req.validationErrors();
+  if(req.body.password != req.body.password_confirmation){
+    if(!errors){ errors = []; }
+    errors.push({ param: 'password_confirmation',
+    msg: 'Password and password confirmation does not match',
+    value: '' });
+  }
+  return errors;
+}
+
 function password_ecryption (password, salt) {
   var encrypted_password = crypto.createHmac('sha256', salt).update(password).digest('hex');
   return encrypted_password;
 };
 
 UserSchema.methods = {
-  createUser : function(params, fn){
-    this.name = params['name'];
-    this.email = params['email'];
-    this.username = params['username'] ;
-    encrypted_password = password_ecryption(params['password'], this.salt);
-    this.password =  encrypted_password;
-    this.save(function (err) {
-      fn(err, this);
-    });
+  createUser : function(req, fn){
+    var errors = isValidate(req);
+    var params = req.body
+    if(!errors){
+      this.name = params['name'];
+      this.email = params['email'];
+      this.username = params['username'] ;
+      encrypted_password = password_ecryption(params['password'], this.salt);
+      this.password =  encrypted_password;
+      if(encrypted_password != null && encrypted_password != '') {
+        this.save(function (err) {
+          fn(err, this);
+        });
+      }
+    } else{
+      fn(errors, this);
+    }
   }
 };
 
