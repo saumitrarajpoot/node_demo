@@ -65,11 +65,12 @@ UserSchema.methods = {
   createUser : function(req, fn){
     var errors = isValidate(req);
     var params = req.body
+    this.name = params['name'].trim();
+    this.email = params['email'].trim();
+    this.username = params['username'].trim();
+
     if(!errors){
-      this.name = params['name'];
-      this.email = params['email'];
-      this.username = params['username'] ;
-      encrypted_password = password_ecryption(params['password'], this.salt);
+      encrypted_password = password_ecryption(params['password'].trim(), this.salt);
       this.password =  encrypted_password;
       if(encrypted_password != null && encrypted_password != '') {
         this.save(function (err) {
