@@ -18,7 +18,7 @@ app.set('view engine', 'jade');
 var db = mongoose.connection;
 db.on('error', console.error);
 db.once('open', function() {
-  console.log('connected to data');
+  console.log('connected to database');
 });
 mongoose.connect('mongodb://localhost/node_test');
 // end database section

@@ -3,13 +3,19 @@ module.exports = function (app) {
   var users = require('../routes/users');
   app.use('/', index);
   //app.use('/users', users);  */
-  var sessions = require('../app/controllers/users/sessions');
+  var welcomes = require('../app/controllers/welcomes');
   var registrations = require('../app/controllers/users/registrations');
+  var sessions = require('../app/controllers/users/sessions');
   var homes = require('../app/controllers/homes');
   var articles = require('../app/controllers/articles');
 
-  app.get('/', homes.index);
+  app.get('/', welcomes.index);
+
   app.get('/users/signin', sessions.signin);
+  app.post('/users/signin', sessions.createSession);
   app.get('/users/signup', registrations.signup);
   app.post('/users/signup', registrations.createAccount);
+
+  //homes controller
+  app.get('/home', homes.index);
 }
