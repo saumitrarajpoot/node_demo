@@ -5,6 +5,7 @@
 
 var mongoose = require('mongoose');
 var crypto = require('crypto');
+var uuid = require('node-uuid');
 var Schema = mongoose.Schema;
 var oAuthTypes = [
   'github',
@@ -20,9 +21,10 @@ var oAuthTypes = [
 
 var UserSchema = new Schema({
   name: { type: String, default: '' },
-  email: { type: String, default: '' },
-  username: { type: String, default: '' },
+  email: { type: String, index: { unique: true }, default: '' },
+  username: { type: String, index: { unique: true }, default: '' },
   password: { type: String, default: '' },
+  salt: { type: String, required: true, default: uuid.v1 },
   //provider: { type: String, default: '' },
   //salt: { type: String, default: '' },
   /*authToken: { type: String, default: '' },
@@ -37,8 +39,9 @@ var UserSchema = new Schema({
   }
 });
 
-function hash (msg, key) {
-  return crypto.createHmac('sha256', key).update(msg).digest('hex');
+function password_ecryption (password, salt) {
+  var encrypted_password = crypto.createHmac('sha256', salt).update(password).digest('hex');
+  return encrypted_password;
 };
 
 UserSchema.methods = {
@@ -46,9 +49,10 @@ UserSchema.methods = {
     this.name = params['name'];
     this.email = params['email'];
     this.username = params['username'] ;
-    this.password = params['password'];
+    encrypted_password = password_ecryption(params['password'], this.salt);
+    this.password =  encrypted_password;
     this.save(function (err) {
-        fn(err, this);
+      fn(err, this);
     });
   }
 };
